@@ -17,18 +17,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        kingJamesPassage = (TextView) findViewById(R.id.king_james);
-        americanStandardPassage = (TextView) findViewById(R.id.american_standard);
-        twentiethCenturyPassage = (TextView) findViewById(R.id.twentienth_century);
+        kingJamesPassage = findViewById(R.id.king_james);
+        americanStandardPassage = findViewById(R.id.american_standard);
+        twentiethCenturyPassage = findViewById(R.id.twentienth_century);
     }
 
     public void kingJames(View view) {
-        Intent kingJamesIntent = new Intent(this,KingJameVersion.class);
+        Intent kingJamesIntent = new Intent(this, KingJameVersion.class);
         startActivity(kingJamesIntent);
     }
 
     public void americanStandard(View view) {
-        Intent americanStandardIntent = new Intent(this,AmericanStandardVersion.class);
+        Intent americanStandardIntent = new Intent(this, AmericanStandardVersion.class);
         startActivity(americanStandardIntent);
     }
 
